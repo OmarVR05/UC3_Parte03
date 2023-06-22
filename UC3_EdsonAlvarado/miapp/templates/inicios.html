@@ -1,0 +1,9 @@
+{% extends 'index.html' %}
+{% block contents %}
+<ul>
+    {% for ingrediente in cursos %}
+        <li>{{ ingrediente }}</li>
+    {% endfor %}
+</ul>
+   
+{% endblock %}
