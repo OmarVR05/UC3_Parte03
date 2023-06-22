@@ -1,0 +1,12 @@
+{% extends 'index.html' %}
+
+{% block contents %}
+<h1>Números primos entre {{ a }} y {{ b }}</h1>
+<ul>
+    {% for primo in primos %}
+        <li>{{ primo }}</li>
+    {% empty %}
+        <li>No se encontraron números primos</li>
+    {% endfor %}
+</ul>
+{% endblock %}
